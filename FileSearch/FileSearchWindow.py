@@ -29,7 +29,7 @@ def main():
   #ドライブレター一覧を取得
   existsDriveLetter = getExistsDriveLettrList()
   #ドライブの一覧用コンボボックス
-  driveCombobox = ttk.Combobox(root,height=len(existsDriveLetter),width=2,values=existsDriveLetter)
+  driveCombobox = ttk.Combobox(root,height=len(existsDriveLetter),width=2,values=existsDriveLetter,state='readonly')
   #ドライブの一覧用コンボボックスの初期選択値を設定する
   driveCombobox.set(existsDriveLetter[0])
   #ドライブ一覧をルートウィンドウに表示する
